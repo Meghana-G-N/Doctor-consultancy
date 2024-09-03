@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/88411a0144.js" crossorigin="anonymous"></script>
+    <title>Doctor consultancy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+     <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 border">
+                    <div class="logo-border">
+                        <a href="index.html">
+                            <img src="logo2.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#header">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#booking">Elements</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="header-social text-center">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a href="javascript:void(0);" class="btn-green mt-20px">
+                        <i class="fa-regular fa-calendar-days"></i> Make a Payment
+                    </a>
+                </div>
+            </div>
+        </div>
+     </header>
+
+     <section class="banner" style="background-image: url(background.png);">
+        <div class="container" id="services">
+            <div class="banner-content">
+                <img src="logo1.png" alt="Banner-Logo">
+                <h1>Our expertise at your service</h1>
+            </div>
+            <div class="service">
+                <a href="javascript:void(0)">
+                    
+                  <div class="service-content">
+                    Our Service Providers
+                  </div> 
+                  <div class="service-btn">
+                   <!---- <i class="fa-solid fa-arrow-right"></i>-->
+                  </div> 
+                  <div class="service-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                  </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="service-content">
+                      Book an appointment
+                    </div> 
+                    <div class="service-btn">
+                     <!-- <i class="fa-solid fa-arrow-right"></i>-->
+                    </div> 
+                    <div class="service-icon">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="service-content">
+                      Have an emergency?
+                    </div> 
+                    <div class="service-btn">
+                     <!--- <i class="fa-solid fa-arrow-right"></i>-->
+                    </div> 
+                    <div class="service-icon">
+                        <div class="call">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="call-number">
+                            <p>Emergency Line</p>
+                            <h3>1-800-900</h3>
+                        </div>
+                    </div>
+                    
+                      
+                    </div>
+                  </a>
+            </div>
+        </div>
+     </section>
+
+     <section class="work" id="booking">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="hours">
+                        <h2>Working Hours for the offline consultation</h2>
+                        <div class="time">
+                            <div class="booking">Mon - Wed</div>
+                            <div class="booking">8AM - 7PM</div>
+                            <div class="booking">
+                                <button type="button" class="btn-white">
+                                    <i class="fa-solid fa-calendar-week"></i>  Book
+                                </button>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <div class="booking">Thursday</div>
+                            <div class="booking">8AM - 6PM</div>
+                            <div class="booking">
+                                <button type="button" class="btn-white">
+                                    <i class="fa-solid fa-calendar-week"></i>  Book
+                                </button>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <div class="booking">Friday</div>
+                            <div class="booking">8AM - 6PM</div>
+                            <div class="booking">
+                                <button type="button" class="btn-white">
+                                    <i class="fa-solid fa-calendar-week"></i>  Book
+                                </button>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <div class="booking">Sat - Sun</div>
+                            <div class="booking">8AM - 2PM</div>
+                            <div class="booking">
+                                <button type="button" class="btn-white">
+                                    <i class="fa-solid fa-calendar-week"></i>  Book
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="time">
+                            <h4>Time not flexible?</h4>
+                            <p>We provide high quality integrated healthcare services, based on a patient - centered</p>
+                            <button type="button" class="btn-green btn-transparent mt-20px">
+                                <i class="fa-solid fa-calendar-week"></i> Suggest Checkup Time 
+                            </button>
+                            <div class="contact-right">
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="text" name="Time of consult" placeholder="Timings" required>
+                                    <button id="msg" type="submit" class="btn-green btn-transparent mt-20px">Book</button>
+                                </form>
+                                <span id="msg"></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4" id="about">
+                    <div class="response">
+                        <a href="javascript:void(0);">
+                            <div class="response-bg" style="background-image: url(service1.png);"></div>
+                            <div class="response-content">
+                                <div class="response-icon">
+                                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+
+                                </div>
+                                <h2>Consult Top Doctors 24×7 online</h2>
+                                <p>Connect instantly with a 24×7 specialist or choose to video visit a particular doctor.</p>
+                                <button type="button" class="read-more mt-20px">Read-more
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="response">
+                        <a href="javascript:void(0);">
+                            <div class="response-bg" style="background-image: url(service2.png);"></div>
+                            <div class="response-content">
+                                <div class="response-icon">
+                                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+
+                                </div>
+                                <h2>Free Follow-up and safe consultations</h2>
+                                <p>Get a valid digital presciption and a 7-day, free foloow-up for further clarifications.</p>
+                                <button type="button" class="read-more mt-20px">Read-more
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="response">
+                        <a href="javascript:void(0);">
+                            <div class="response-bg" style="background-image: url(service3.png);"></div>
+                            <div class="response-content">
+                                <div class="response-icon">
+                                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+
+                                </div>
+                                <h2>Similar Clinic Experience</h2>
+                                <p>Experience clinic-like consultation through a video call with doctor. Video consultation is available only on the HealthCare App"></p>
+                                <button type="button" class="read-more mt-20px">Read-more
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="response">
+                        <a href="javascript:void(0);">
+                            <div class="response-bg" style="background-image: url(service4.png);"></div>
+                            <div class="response-content">
+                                <div class="response-icon">
+                                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+
+                                </div>
+                                <h2>Safe consultations</h2>
+                                <p>Start an instant consultation within 2 minutes or do video consultation at the sheduled time.</p>
+                                <button type="button" class="read-more mt-20px">Read-more
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+           <!--contact form---------------------------->
+
+                 
+            </div>
+        </div>
+     </section>
+
+     <script>
+        var header = document.getElementsByTagName("header");
+        window.onscroll=function(){scrollFunction()};
+
+        function scrollFunction(){
+            if(document.body.scrollTop > 200|| document.documentElement.scrollTop > 200){
+                header[0].setAttribute("class", "header-active");
+            }
+            else{
+                header[0].removeAttribute("class")
+            }
+        }
+     </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwsRkkXnmb57zVXBm08jAFgw9jgF6m5qcmCgb2zNBONgm9OvO25lFvHztPbY30cfYtK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Consultation has been booked successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+<body>
+    
+</body>
+</html>
